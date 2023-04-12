@@ -4,14 +4,16 @@
 <?import com.jfoenix.controls.JFXComboBox?>
 <?import com.jfoenix.controls.JFXDatePicker?>
 <?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TableColumn?>
 <?import javafx.scene.control.TableView?>
-<?import javafx.scene.image.Image?>
+<?import javafx.scene.effect.Shadow?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
 <?import javafx.scene.text.Font?>
-
 
 <AnchorPane fx:id="StudentPane" prefHeight="623.0" prefWidth="987.0" style="-fx-background-color: linear-gradient(to right, #bbd2c5, #536976);;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.orm.hostelSystem.controller.StudentsController">
     <children>
@@ -52,34 +54,64 @@
                 <Font name="System Bold" size="15.0" />
             </font>
         </JFXTextField>
-        <JFXButton layoutX="853.0" layoutY="357.0" onAction="#AddOnAction" prefHeight="31.0" prefWidth="109.0" style="-fx-background-color: #4cd137;" text="ADD" textFill="#f7f7f8">
+        <JFXButton buttonType="RAISED" layoutX="850.0" layoutY="333.0" onAction="#AddOnAction" prefHeight="35.0" prefWidth="98.0" text="ADD" textFill="#0bba4b">
             <font>
                 <Font name="Rockwell Bold" size="19.0" />
             </font>
+            <ripplerFill>
+                <LinearGradient endX="1.0" endY="1.0" startX="0.6047619047619047" startY="0.3476190476190476">
+                    <stops>
+                        <Stop color="#98ff32" />
+                        <Stop color="BLACK" offset="1.0" />
+                    </stops>
+                </LinearGradient>
+            </ripplerFill>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
         </JFXButton>
-        <JFXButton layoutX="852.0" layoutY="423.0" onAction="#SaveOnAction" prefHeight="31.0" prefWidth="109.0" style="-fx-background-color: #0652DD;" text="SAVE" textFill="#eeeaea">
+        <JFXButton buttonType="RAISED" layoutX="850.0" layoutY="402.0" onAction="#SaveOnAction" prefHeight="35.0" prefWidth="98.0" text="SAVE" textFill="#000157">
             <font>
-                <Font name="Rockwell" size="19.0" />
+                <Font name="Rockwell Bold" size="19.0" />
             </font>
+            <ripplerFill>
+                <LinearGradient endX="1.0" endY="0.9285714285714286" startX="1.0" startY="0.26190476190476186">
+                    <stops>
+                        <Stop color="#2194ff" />
+                        <Stop color="#ff6e6e" offset="1.0" />
+                    </stops>
+                </LinearGradient>
+            </ripplerFill>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+            <effect>
+                <Shadow blurType="ONE_PASS_BOX" height="100.81" radius="55.837500000000006" width="124.54" />
+            </effect>
         </JFXButton>
-        <JFXButton layoutX="853.0" layoutY="487.0" onAction="#DeleteOnAction" prefHeight="31.0" prefWidth="109.0" style="-fx-background-color: #EA2027;" text="DELETE" textFill="#f2eded">
+        <JFXButton buttonType="RAISED" layoutX="850.0" layoutY="469.0" onAction="#DeleteOnAction" prefHeight="35.0" prefWidth="98.0" text="DELETE" textFill="RED">
             <font>
-                <Font name="Rockwell" size="19.0" />
+                <Font name="Rockwell Bold" size="16.0" />
             </font>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
         </JFXButton>
-        <JFXButton layoutX="852.0" layoutY="547.0" onAction="#BackOnAction" prefHeight="31.0" prefWidth="109.0" style="-fx-background-color: #4b4b4b;" text="BACK" textFill="#fffbfb">
+        <JFXButton buttonType="RAISED" layoutX="855.0" layoutY="534.0" onAction="#BackOnAction" prefHeight="22.0" prefWidth="87.0" ripplerFill="BLACK" text="BACK" textFill="#bfbfbf">
             <font>
                 <Font name="Modern No. 20" size="19.0" />
             </font>
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
         </JFXButton>
         <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="878.0" layoutY="47.0" pickOnBounds="true" preserveRatio="true">
             <image>
-                <Image url="/lk/ijse/orm/hostelSystem/assets/Searchbtn.png" />
             </image>
         </ImageView>
-        <Label layoutX="301.0" layoutY="28.0" prefHeight="50.0" prefWidth="299.0" text="Manage Students" textFill="#0005ff">
+        <Label layoutX="349.0" layoutY="27.0" prefHeight="50.0" prefWidth="330.0" text="Students Management" textFill="WHITE">
             <font>
-                <Font name="Lucida Bright" size="34.0" />
+                <Font name="Berlin Sans FB" size="34.0" />
             </font>
         </Label>
     </children>

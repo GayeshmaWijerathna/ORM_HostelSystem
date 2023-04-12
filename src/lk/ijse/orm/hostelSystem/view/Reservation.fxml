@@ -15,7 +15,7 @@
                 <children>
                     <ImageView fitHeight="413.0" fitWidth="776.0" layoutX="68.0" layoutY="47.0" opacity="0.09" pickOnBounds="true" preserveRatio="true">
                         <image>
-                            <Image url="@assests/images/Manage_Res.png" />
+                            <Image url="" />
                         </image>
                     </ImageView>
                     <Text fill="#fc9300" layoutX="264.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Manage Reservation" textAlignment="CENTER" wrappingWidth="314.13671875">
@@ -23,7 +23,7 @@
                             <Font name="Bell MT Bold" size="31.0" />
                         </font>
                     </Text>
-                    <Button fx:id="btnBack" layoutX="52.0" layoutY="56.0" mnemonicParsing="false" onAction="#BackOnAction" onMouseClicked="#navigateToHome" prefHeight="38.0" prefWidth="131.0" style="-fx-background-color: orange;" text="Back">
+                    <Button fx:id="btnBack" layoutX="52.0" layoutY="56.0" mnemonicParsing="false" onAction="#BackOnAction" onMouseClicked="#navigatetoHome" prefHeight="38.0" prefWidth="131.0" style="-fx-background-color: orange;" text="Back">
                         <font>
                             <Font name="System Bold" size="15.0" />
                         </font>
@@ -53,7 +53,7 @@
                             <Font name="System Bold" size="15.0" />
                         </font>
                     </JFXTextField>
-                    <JFXComboBox fx:id="cmbStudentId" focusColor="#fc9300" labelFloat="true" layoutX="25.0" layoutY="167.0" prefHeight="25.0" prefWidth="231.0" promptText="Student ID:" styleClass="combo" stylesheets="@assests/style/style.css" unFocusColor="#fc9300" />
+                    <JFXComboBox fx:id="cmbStudentId" focusColor="#fc9300" labelFloat="true" layoutX="25.0" layoutY="167.0" prefHeight="25.0" prefWidth="231.0" promptText="Student ID:" styleClass="combo" stylesheets="../assets/css/Style.css" unFocusColor="#fc9300" />
                     <Label fx:id="llbResId" layoutX="25.0" layoutY="119.0" prefHeight="31.0" prefWidth="231.0" textFill="#fc9300" />
                     <Separator layoutX="18.0" layoutY="297.0" prefHeight="6.0" prefWidth="799.0" style="-fx-background-color: black;" />
                     <JFXTextField fx:id="txtQty" focusColor="#fc9300" labelFloat="true" layoutX="24.0" layoutY="395.0" prefHeight="31.0" prefWidth="231.0" promptText="QTY" unFocusColor="#fc9300">
@@ -76,13 +76,13 @@
                             <Font name="System Bold" size="15.0" />
                         </font>
                     </JFXTextField>
-                    <JFXComboBox fx:id="cmbRoomId" focusColor="#fc9300" labelFloat="true" layoutX="25.0" layoutY="331.0" prefHeight="25.0" prefWidth="231.0" promptText="Room ID:" styleClass="combo" stylesheets="@assests/style/style.css" unFocusColor="#fc9300" />
-                    <Button fx:id="btnStudent" layoutX="463.0" layoutY="463.0" mnemonicParsing="false" onAction="#btnStudentOnAction" onMouseClicked="#navigateToHome" prefHeight="38.0" prefWidth="131.0" style="-fx-background-color: green;" text="Add Student">
+                    <JFXComboBox fx:id="cmbRoomId" focusColor="#fc9300" labelFloat="true" layoutX="25.0" layoutY="331.0" prefHeight="25.0" prefWidth="231.0" promptText="Room ID:" styleClass="combo" stylesheets="../assets/css/Style.css" unFocusColor="#fc9300" />
+                    <Button fx:id="btnStudent" layoutX="463.0" layoutY="463.0" mnemonicParsing="false" onAction="#btnStudentOnAction" onMouseClicked="#navigatetoHome" prefHeight="38.0" prefWidth="131.0" style="-fx-background-color: green;" text="Add Student">
                         <font>
                             <Font name="System Bold" size="15.0" />
                         </font>
                     </Button>
-                    <Button fx:id="btnReserve" layoutX="631.0" layoutY="463.0" mnemonicParsing="false" onAction="#btnReserveOnAction" onMouseClicked="#navigateToHome" prefHeight="38.0" prefWidth="131.0" style="-fx-background-color: #ff00ab;" text="Reserve">
+                    <Button fx:id="btnReserve" layoutX="631.0" layoutY="463.0" mnemonicParsing="false" onAction="#btnReserveOnAction" onMouseClicked="#navigatetoHome" prefHeight="38.0" prefWidth="131.0" style="-fx-background-color: #ff00ab;" text="Reserve">
                         <font>
                             <Font name="System Bold" size="15.0" />
                         </font>

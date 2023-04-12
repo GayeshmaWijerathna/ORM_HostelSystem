@@ -23,7 +23,7 @@ public class LogingController {
 
     //------Show Password-----//
     public void showPasswordOnMousePressed(MouseEvent mouseEvent) {
-        Image img = new Image("/lk/ijse/orm/hostelSystem/assets/show-password.png");
+        Image img = new Image("/lk/ijse/orm/hostelSystem/assets/Image/show-password.png");
         ImageView view = new ImageView(img);
         view.setFitHeight(20);
         view.setFitWidth(20);
@@ -37,7 +37,7 @@ public class LogingController {
 
     //------Hide Password-----//
     public void hidePasswordOnMousePressed(MouseEvent mouseEvent) {
-        Image img = new Image("/lk/ijse/orm/hostelSystem/assets/hide-password.png");
+        Image img = new Image("/lk/ijse/orm/hostelSystem/assets/Image/hide-password.png");
         ImageView view = new ImageView(img);
         view.setFitHeight(20);
         view.setFitWidth(20);

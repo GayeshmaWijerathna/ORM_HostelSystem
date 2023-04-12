@@ -108,12 +108,12 @@
         </Label>
         <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="883.0" layoutY="116.0" pickOnBounds="true" preserveRatio="true">
             <image>
-                <Image url="@../assets/Searchbtn.png" />
+                <Image url="@../assets/Image/Searchbtn.png" />
             </image>
         </ImageView>
       <ImageView fitHeight="81.0" fitWidth="87.0" layoutX="247.0" layoutY="8.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../assets/bookingroom.png" />
+            <Image url="@../assets/Image/bookingroom.png" />
          </image>
       </ImageView>
     </children>
