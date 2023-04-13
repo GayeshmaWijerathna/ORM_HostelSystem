@@ -17,13 +17,13 @@
 <children>
       <ImageView fitHeight="507.0" fitWidth="723.0" opacity="0.13" pickOnBounds="true">
          <image>
-            <Image url="@../assets/Image/hostel-cover.jpg" />
+            <Image url="@assets/Image/hostel-cover.jpg" />
          </image>
       </ImageView>
     <Separator layoutX="68.0" layoutY="77.0" prefHeight="0.0" prefWidth="607.0" />
     <ImageView fx:id="imgStudent" fitHeight="122.0" fitWidth="172.0" layoutX="276.0" layoutY="260.0" onMouseClicked="#navigate" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" pickOnBounds="true" preserveRatio="true">
         <image>
-            <Image url="@../assets/Image/res.png" />
+            <Image url="@assets/Image/res.png" />
         </image>
          <cursor>
             <Cursor fx:constant="HAND" />
@@ -31,7 +31,7 @@
     </ImageView>
     <ImageView fx:id="imgRooms" fitHeight="113.0" fitWidth="119.0" layoutX="68.0" layoutY="239.0" onMouseClicked="#navigate" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" pickOnBounds="true" preserveRatio="true">
         <image>
-            <Image url="@../assets/Image/roomb.png" />
+            <Image url="@assets/Image/roomb.png" />
         </image>
          <cursor>
             <Cursor fx:constant="HAND" />
@@ -39,7 +39,7 @@
     </ImageView>
     <ImageView fx:id="imgKeyMoney" fitHeight="113.0" fitWidth="131.0" layoutX="535.0" layoutY="246.0" onMouseClicked="#navigate" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" pickOnBounds="true" preserveRatio="true">
         <image>
-            <Image url="@../assets/Image/keym.png" />
+            <Image url="@assets/Image/keym.png" />
         </image>
          <cursor>
             <Cursor fx:constant="HAND" />

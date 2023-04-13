@@ -19,7 +19,7 @@
    <content>
       <AnchorPane prefHeight="400.0" prefWidth="600.0">
          <children>
-            <ImageView fitHeight="396.0" fitWidth="596.0" layoutX="2.0" layoutY="2.0" onMousePressed="#showPasswordOnMousePressed" pickOnBounds="true">
+            <ImageView disable="true" fitHeight="396.0" fitWidth="596.0" layoutX="2.0" layoutY="2.0" onMousePressed="#showPasswordOnMousePressed" pickOnBounds="true">
                <image>
                   <Image url="@assets/Image/hostel-cover.jpg" />
                </image>
@@ -30,11 +30,13 @@
                </cursor>
                <graphic>
                   <ImageView fitHeight="23.0" fitWidth="21.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../view/assets/Image/hide-password.png" />
-                     </image>
+                     <Image url="@../view/assets/Image/hide-password.png" />
                   </ImageView>
                </graphic></Label>
+            <JFXTextField labelFloat="true" layoutX="356.0" layoutY="156.0" promptText="User Name" unFocusColor="WHITE">
+               <effect>
+                  <ColorAdjust brightness="-1.0" contrast="-0.05" />
+               </effect></JFXTextField>
             <JFXPasswordField fx:id="txtPassword" labelFloat="true" layoutX="355.0" layoutY="197.0" promptText="Password" unFocusColor="WHITE">
                <effect>
                   <ColorAdjust brightness="-1.0" />
@@ -47,10 +49,6 @@
                   <Font name="Exotc350 DmBd BT Demi-Bold" size="12.0" />
                </font>
             </Button>
-            <JFXTextField labelFloat="true" layoutX="356.0" layoutY="156.0" promptText="User Name" unFocusColor="WHITE">
-               <effect>
-                  <ColorAdjust brightness="-1.0" contrast="-0.05" />
-               </effect></JFXTextField>
             <Button fx:id="cancel" layoutX="469.0" layoutY="259.0" mnemonicParsing="false" onAction="#cancelOnAction" prefHeight="23.0" prefWidth="44.0" style="-fx-background-color: #DFFCB5;" text="Cancel">
                <font>
                   <Font size="10.0" />

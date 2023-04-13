@@ -18,7 +18,7 @@ public class AppInitializer extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception {
 
-        URL resource = this.getClass().getResource("/lk/ijse/orm/hostelSystem/view/Loging.fxml");
+        URL resource = this.getClass().getResource("/lk/ijse/orm/hostelSystem/view/Login.fxml");
         Parent window = FXMLLoader.load(resource);
         Scene scene = new Scene(window);
         primaryStage.setScene(scene);
