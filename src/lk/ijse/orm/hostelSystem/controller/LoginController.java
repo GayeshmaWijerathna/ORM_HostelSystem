@@ -8,7 +8,7 @@ import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 
-public class LogingController {
+public class LoginController {
     public Button binlogID;
     public Label lblHide;
     public JFXPasswordField txtPassword;
