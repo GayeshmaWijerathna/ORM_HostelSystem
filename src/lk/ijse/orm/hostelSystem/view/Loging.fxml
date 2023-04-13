@@ -21,7 +21,7 @@
          <children>
             <ImageView fitHeight="396.0" fitWidth="596.0" layoutX="2.0" layoutY="2.0" onMousePressed="#showPasswordOnMousePressed" pickOnBounds="true">
                <image>
-                  <Image url="@../assets/Image/hostel-cover.jpg" />
+                  <Image url="@assets/Image/hostel-cover.jpg" />
                </image>
             </ImageView>
             <Label fx:id="lblHide" layoutX="488.0" layoutY="208.0" onMousePressed="#showPasswordOnMousePressed" onMouseReleased="#hidePasswordOnMousePressed" prefHeight="17.0" prefWidth="29.0" textFill="WHITE">
@@ -31,7 +31,7 @@
                <graphic>
                   <ImageView fitHeight="23.0" fitWidth="21.0" pickOnBounds="true" preserveRatio="true">
                      <image>
-                        <Image url="@../assets/Image/hide-password.png" />
+                        <Image url="@../view/assets/Image/hide-password.png" />
                      </image>
                   </ImageView>
                </graphic></Label>
