@@ -6,7 +6,7 @@ import javafx.stage.Stage;
 
 import java.net.URL;
 
-public class AppInitializer extends Application {
+public class AppInizializer extends Application {
 
     public static void main(String[] args) {
 
@@ -16,7 +16,7 @@ public class AppInitializer extends Application {
     @Override
     public void start(Stage primaryStage) throws Exception {
 
-        URL resource = this.getClass().getResource("/lk/ijse/orm/view/LoginForm.fxml");
+        URL resource = this.getClass().getResource("/lk/ijse/orm/hostelSystem/view/LoginForm.fxml");
         Parent window = FXMLLoader.load(resource);
         Scene scene = new Scene(window);
         primaryStage.setScene(scene);
