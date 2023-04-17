@@ -1,4 +1,4 @@
-package lk.ijse.orm.dto;
+package lk.ijse.orm.hostelSystem.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

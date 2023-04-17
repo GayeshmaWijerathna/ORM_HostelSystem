@@ -12,7 +12,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane fx:id="AdminDashboard" prefHeight="589.0" prefWidth="983.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.orm.controller.DashBoardController">
+<AnchorPane fx:id="AdminDashboard" prefHeight="589.0" prefWidth="983.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.orm.hostelSystem.controller.DashBoardFormController">
    <children>
       <ImageView disable="true" fitHeight="589.0" fitWidth="987.0" layoutX="-1.0" opacity="0.2" pickOnBounds="true">
          <image>

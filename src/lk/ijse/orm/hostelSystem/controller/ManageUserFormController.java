@@ -1,4 +1,4 @@
 package lk.ijse.orm.hostelSystem.controller;
 
-public class ManageUserController {
+public class ManageUserFormController {
 }

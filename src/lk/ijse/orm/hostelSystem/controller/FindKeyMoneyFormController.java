@@ -1,4 +1,4 @@
 package lk.ijse.orm.hostelSystem.controller;
 
-public class FindKeyMoneyController {
+public class FindKeyMoneyFormController {
 }

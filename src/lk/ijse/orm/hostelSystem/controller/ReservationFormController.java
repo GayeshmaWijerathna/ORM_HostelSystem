@@ -1,4 +1,4 @@
 package lk.ijse.orm.hostelSystem.controller;
 
-public class ReservationController {
+public class ReservationFormController {
 }

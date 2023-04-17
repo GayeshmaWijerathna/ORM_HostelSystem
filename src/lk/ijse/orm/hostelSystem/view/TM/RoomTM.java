@@ -1,14 +1,13 @@
-package lk.ijse.orm.hostelSystem.dto;
-
+package lk.ijse.orm.hostelSystem.view.TM;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 @Data
-@NoArgsConstructor
 @AllArgsConstructor
-public class RoomDTO {
+@NoArgsConstructor
+public class RoomTM {
 
     private String room_type_id;
     private String type;

@@ -1,5 +1,4 @@
-package lk.ijse.orm.hostelSystem.dto;
-
+package lk.ijse.orm.hostelSystem.view.TM;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -8,9 +7,9 @@ import lombok.NoArgsConstructor;
 import java.time.LocalDate;
 
 @Data
-@NoArgsConstructor
 @AllArgsConstructor
-public class ReservationDTO {
+@NoArgsConstructor
+public class ReservationTM {
 
     private String res_id;
     private LocalDate date;

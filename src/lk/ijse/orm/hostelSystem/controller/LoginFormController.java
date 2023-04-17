@@ -1,4 +1,4 @@
-package lk.ijse.orm.controller;
+package lk.ijse.orm.hostelSystem.controller;
 
 import com.jfoenix.controls.JFXPasswordField;
 import com.jfoenix.controls.JFXTextField;
@@ -18,8 +18,7 @@ public class LoginFormController {
     public Label lblHide;
     public AnchorPane logging_pane;
     public JFXTextField UserName_Id;
-    public JFXPasswordField Pasword_Id;
-
+    public JFXPasswordField Password_Id;
 
     public void showPasswordOnMousePressed(MouseEvent mouseEvent) {
 
@@ -29,10 +28,10 @@ public class LoginFormController {
         view.setFitWidth(20);
         lblHide.setGraphic(view);
 
-        Pasword_Id.setPromptText(Pasword_Id.getText());
-        Pasword_Id.setText("");
-        Pasword_Id.setDisable(true);
-        Pasword_Id.requestFocus();
+        Password_Id.setPromptText(Password_Id.getText());
+        Password_Id.setText("");
+        Password_Id.setDisable(true);
+        Password_Id.requestFocus();
     }
 
     public void LoggingOnAction(ActionEvent actionEvent) throws SQLException, IOException, ClassNotFoundException {
@@ -46,8 +45,11 @@ public class LoginFormController {
         view.setFitWidth(20);
         lblHide.setGraphic(view);
 
-        Pasword_Id.setText(Pasword_Id.getPromptText());
-        Pasword_Id.setPromptText("");
-        Pasword_Id.setDisable(false);
+        Password_Id.setText(Password_Id.getPromptText());
+        Password_Id.setPromptText("");
+        Password_Id.setDisable(false);
+    }
+
+    public void CancelOnAction(ActionEvent actionEvent) {
     }
 }

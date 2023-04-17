@@ -6,7 +6,7 @@ import javafx.stage.Stage;
 
 import java.net.URL;
 
-public class AppInizializer extends Application {
+public class AppInitializer extends Application {
 
     public static void main(String[] args) {
 
@@ -20,7 +20,7 @@ public class AppInizializer extends Application {
         Parent window = FXMLLoader.load(resource);
         Scene scene = new Scene(window);
         primaryStage.setScene(scene);
-        primaryStage.setTitle("Login Form");
+        primaryStage.setTitle("THE D24 HOSTEL");
         primaryStage.centerOnScreen();
 
         primaryStage.show();

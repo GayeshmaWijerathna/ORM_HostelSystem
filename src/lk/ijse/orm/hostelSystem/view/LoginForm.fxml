@@ -16,7 +16,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<ScrollPane xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.orm.controller.LoginFormController">
+<ScrollPane xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.orm.hostelSystem.controller.LoginFormController">
    <AnchorPane fx:id="logging_pane" prefHeight="400.0" prefWidth="600.0">
       <ImageView disable="true" fitHeight="396.0" fitWidth="596.0" layoutX="1.0" layoutY="2.0" onMousePressed="#showPasswordOnMousePressed" pickOnBounds="true">
          <Image url="@assests/images/hostel-cover.jpg" />
@@ -35,7 +35,7 @@
          <effect>
             <ColorAdjust brightness="-1.0" contrast="-0.05" />
          </effect></JFXTextField>
-      <JFXPasswordField fx:id="Pasword_Id" labelFloat="true" layoutX="332.0" layoutY="209.0" prefHeight="25.0" prefWidth="173.0" promptText="Password" unFocusColor="WHITE">
+      <JFXPasswordField fx:id="Password_Id" labelFloat="true" layoutX="332.0" layoutY="209.0" prefHeight="25.0" prefWidth="173.0" promptText="Password" unFocusColor="WHITE">
          <effect>
             <ColorAdjust brightness="-1.0" />
          </effect></JFXPasswordField>
