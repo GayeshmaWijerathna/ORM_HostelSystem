@@ -1,5 +1,4 @@
-package lk.ijse.orm.hostelSystem.dto;
-
+package lk.ijse.orm.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -9,7 +8,6 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class LoginDTO {
-
     private String userID;
     private String name;
     private String address;
@@ -17,4 +15,3 @@ public class LoginDTO {
     private String Password;
     private String gender;
 }
-

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<ScrollPane xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.orm.controller.LoginFormController">
+   <AnchorPane fx:id="logging_pane" prefHeight="400.0" prefWidth="600.0">
+      <ImageView disable="true" fitHeight="396.0" fitWidth="596.0" layoutX="1.0" layoutY="2.0" onMousePressed="#showPasswordOnMousePressed" pickOnBounds="true">
+         <Image url="@assests/images/hostel-cover.jpg" />
+      </ImageView>
+      <Rectangle arcHeight="67.0" arcWidth="67.0" disable="true" fill="#3c3c3c" height="284.0" layoutX="283.0" layoutY="47.0" opacity="0.39" stroke="#a4a4a4" strokeType="INSIDE" width="295.0" />
+      <Label fx:id="lblHide" layoutX="503.0" layoutY="218.0" onMousePressed="#showPasswordOnMousePressed" onMouseReleased="#hidePasswordOnMousePressedd" prefHeight="17.0" prefWidth="29.0" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <graphic>
+            <ImageView fitHeight="23.0" fitWidth="21.0" pickOnBounds="true" preserveRatio="true">
+               <Image url="@assests/images/ShowPW.png" />
+            </ImageView>
+         </graphic></Label>
+      <JFXTextField fx:id="UserName_Id" labelFloat="true" layoutX="330.0" layoutY="156.0" prefHeight="25.0" prefWidth="170.0" promptText="User Name" unFocusColor="WHITE">
+         <effect>
+            <ColorAdjust brightness="-1.0" contrast="-0.05" />
+         </effect></JFXTextField>
+      <JFXPasswordField fx:id="Pasword_Id" labelFloat="true" layoutX="332.0" layoutY="209.0" prefHeight="25.0" prefWidth="173.0" promptText="Password" unFocusColor="WHITE">
+         <effect>
+            <ColorAdjust brightness="-1.0" />
+         </effect></JFXPasswordField>
+      <Button layoutX="416.0" layoutY="260.0" mnemonicParsing="false" onAction="#LoggingOnAction" prefHeight="9.0" prefWidth="94.0" style="-fx-background-color: #070A52;" text="Login" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <font>
+            <Font name="Exotc350 DmBd BT Demi-Bold" size="17.0" />
+         </font>
+      </Button>
+      <Button layoutX="330.0" layoutY="262.0" mnemonicParsing="false" onAction="#CancelOnAction" prefHeight="30.0" prefWidth="55.0" style="-fx-background-color: #DFFCB5;" text="Clear">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Text layoutX="296.0" layoutY="130.0" stroke="WHITE" strokeLineJoin="ROUND" strokeMiterLimit="6.0" strokeType="OUTSIDE" text="The D24 Hostel" wrappingWidth="255.169921875">
+         <font>
+            <Font name="Exotc350 Bd BT Bold" size="36.0" />
+         </font>
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#d62222" />
+                  <Stop color="#000fff" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Text>
+      <Text fill="WHITE" layoutX="207.0" layoutY="301.0" rotate="15.3" stroke="BLACK" strokeMiterLimit="3.0" strokeType="OUTSIDE" strokeWidth="0.0" text="D24" textAlignment="CENTER">
+         <font>
+            <Font name="Algerian" size="14.0" />
+         </font>
+      </Text>
+      <Text fill="#d0d0d0" layoutX="178.0" layoutY="161.0" strokeType="OUTSIDE" strokeWidth="0.0" text="HOSTEL" textAlignment="CENTER" wrappingWidth="1.0">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+   </AnchorPane>
+</ScrollPane>
