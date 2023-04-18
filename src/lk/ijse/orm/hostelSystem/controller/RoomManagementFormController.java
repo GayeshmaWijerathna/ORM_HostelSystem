@@ -16,6 +16,7 @@ import lk.ijse.orm.hostelSystem.util.NotificationController;
 import lk.ijse.orm.hostelSystem.util.UILoader;
 import lk.ijse.orm.hostelSystem.view.TM.RoomTM;
 
+import javax.persistence.EntityNotFoundException;
 import java.io.IOException;
 import java.net.URL;
 import java.sql.SQLException;
@@ -106,9 +107,11 @@ public class RoomManagementFormController implements Initializable {
 
         String code = tblRoom.getSelectionModel().getSelectedItem().getRoom_type_id();
         try {
-            if (!exitRooms(code)) {
-                NotificationController.Warning_Error("Delete Rooms Warning", code, "There is no such Rooms associated with the ");
+            if (exitRooms(code)) {
+                new Alert(Alert.AlertType.ERROR, "Warning This Room Already Using by Students. \n Therefore You can't Delete it.!").show();
+                NotificationController.Warning_Error("Delete Rooms Warning", code, "This Room Already Using by Students. ");
             }
+
             roomBO.deleteRooms(code);
             tblRoom.getItems().remove(tblRoom.getSelectionModel().getSelectedItem());
             NotificationController.SuccessfulTableNotification("Delete", "Rooms");
@@ -116,7 +119,7 @@ public class RoomManagementFormController implements Initializable {
             initUI();
         } catch (SQLException e) {
             NotificationController.Warning_Error("Delete Rooms Warning", code, "Failed to delete the Rooms ");
-        } catch (ClassNotFoundException e) {
+        } catch (Exception e) {
             e.printStackTrace();
         }
     }
