@@ -9,6 +9,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.paint.LinearGradient?>
 <?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
@@ -19,6 +20,7 @@
             <Image url="@assests/images/hostel-cover.jpg" />
          </image>
       </ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#00182f" height="17.0" layoutY="562.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="988.0" />
       <Text layoutX="380.0" layoutY="61.0" strokeType="OUTSIDE" strokeWidth="0.0" text="The D24" underline="true" wrappingWidth="223.13671875">
          <font>
             <Font name="Bauhaus 93" size="54.0" />
@@ -33,7 +35,7 @@
          </fill>
       </Text>
       <Separator layoutX="240.0" layoutY="74.0" prefHeight="0.0" prefWidth="607.0" />
-      <ImageView fx:id="imgStudent" fitHeight="199.0" fitWidth="215.0" layoutX="90.0" layoutY="334.0" onMouseClicked="#navigate" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="imgStudent" fitHeight="114.0" fitWidth="273.0" layoutX="55.0" layoutY="311.0" onMouseClicked="#navigate" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@assests/images/Reservation.png" />
          </image>
@@ -49,7 +51,7 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </ImageView>
-      <ImageView fx:id="imgKeyMoney" fitHeight="190.0" fitWidth="215.0" layoutX="688.0" layoutY="295.0" onMouseClicked="#navigate" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="imgKeyMoney" fitHeight="190.0" fitWidth="215.0" layoutX="704.0" layoutY="296.0" onMouseClicked="#navigate" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitAnimation" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@assests/images/KeyMoneyimg.png" />
          </image>
@@ -57,7 +59,10 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </ImageView>
-      <Text layoutX="280.0" layoutY="568.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Copyright © Dark Town 2023 | Hostel Management System. All Rights Reserved." />
+      <Text fill="WHITE" layoutX="21.0" layoutY="574.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Copyright © Dark Town 2023 | Hostel Management System. All Rights Reserved.                                                                                                                                               Hotline : +94775569951" wrappingWidth="941.4052734375">
+         <font>
+            <Font size="11.0" />
+         </font></Text>
       <Label fx:id="lblMenu" layoutX="111.0" layoutY="174.0" prefHeight="38.0" prefWidth="416.0" textAlignment="CENTER">
          <font>
             <Font name="GeoSlab703 MdCn BT Bold" size="34.0" />
@@ -71,7 +76,7 @@
             </LinearGradient>
          </textFill>
       </Label>
-      <Button fx:id="btnBack" layoutX="31.0" layoutY="36.0" mnemonicParsing="false" onAction="#BackOnAction"  prefHeight="29.0" prefWidth="69.0" style="-fx-background-color: maroon;" text="Back" textFill="WHITE">
+      <Button fx:id="btnBack" layoutX="31.0" layoutY="36.0" mnemonicParsing="false" onAction="#BackOnAction" prefHeight="29.0" prefWidth="69.0" style="-fx-background-color: maroon;" text="Back" textFill="WHITE">
          <font>
             <Font name="System Bold" size="15.0" />
          </font>

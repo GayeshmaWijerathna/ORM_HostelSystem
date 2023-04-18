@@ -51,7 +51,7 @@ public class RoomDAOImpl implements RoomDAO{
             Transaction transaction = session.beginTransaction();
             Room room = session.get(Room.class, id);
             session.delete(room);
-            transaction.commit();
+            //transaction.commit();
             session.close();
             return true;
         }

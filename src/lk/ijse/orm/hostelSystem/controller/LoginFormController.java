@@ -4,9 +4,11 @@ import com.jfoenix.controls.JFXPasswordField;
 import com.jfoenix.controls.JFXTextField;
 import javafx.event.ActionEvent;
 import javafx.scene.control.Alert;
+import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
+import javafx.scene.input.KeyEvent;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
 import lk.ijse.orm.hostelSystem.bo.BOFactory;
@@ -30,6 +32,8 @@ public class LoginFormController {
     public JFXPasswordField Password_Id;
 
     private final UserBO userBO = (UserBO) BOFactory.getBoFactory().getBO(BOFactory.BOTypes.USER);
+    public Button btnLogin;
+
     public void CancelOnAction(ActionEvent actionEvent) {
         UserName_Id.clear();
         Password_Id.clear();
@@ -91,4 +95,11 @@ public class LoginFormController {
     }
 
 
+    public void enterOnActionun(ActionEvent actionEvent) {
+        Password_Id.requestFocus();
+    }
+
+    public void enterOnActionpw(ActionEvent actionEvent) {
+        btnLogin.fire();
+    }
 }

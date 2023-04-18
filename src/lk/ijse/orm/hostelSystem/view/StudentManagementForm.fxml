@@ -30,7 +30,7 @@
             </LinearGradient>
          </fill>
       </Text>
-      <JFXTextField fx:id="txtId" labelFloat="true" layoutX="14.0" layoutY="104.0" prefHeight="31.0" prefWidth="170.0" promptText="Student ID :">
+      <JFXTextField fx:id="txtId" labelFloat="true" layoutX="16.0" layoutY="120.0" prefHeight="31.0" prefWidth="170.0" promptText="Student ID :">
          <font>
             <Font name="System Bold" size="15.0" />
          </font>
@@ -55,7 +55,7 @@
             </LinearGradient>
          </focusColor>
       </JFXTextField>
-      <JFXTextField fx:id="txtName" labelFloat="true" layoutX="208.0" layoutY="104.0" prefHeight="31.0" prefWidth="239.0" promptText="Student Name :">
+      <JFXTextField fx:id="txtName" labelFloat="true" layoutX="255.0" layoutY="121.0" prefHeight="31.0" prefWidth="239.0" promptText="Student Name :">
          <font>
             <Font name="System Bold" size="15.0" />
          </font>
@@ -105,7 +105,7 @@
             </LinearGradient>
          </focusColor>
       </JFXTextField>
-      <JFXTextField fx:id="txtAddress" labelFloat="true" layoutX="533.0" layoutY="170.0" prefHeight="31.0" prefWidth="226.0" promptText="Student Address :">
+      <JFXTextField fx:id="txtAddress" labelFloat="true" layoutX="411.0" layoutY="171.0" prefHeight="31.0" prefWidth="341.0" promptText="Student Address :">
          <font>
             <Font name="System Bold" size="15.0" />
          </font>
@@ -130,7 +130,7 @@
             </LinearGradient>
          </focusColor>
       </JFXTextField>
-      <JFXComboBox fx:id="cmbGender" focusColor="#fc9300" layoutX="379.0" layoutY="162.0" prefHeight="39.0" prefWidth="137.0" promptText="Gender" styleClass="combo" stylesheets="@assests/style/Style.css">
+      <JFXComboBox fx:id="cmbGender" focusColor="#fc9300" layoutX="563.0" layoutY="120.0" prefHeight="31.0" prefWidth="115.0" promptText="Gender" styleClass="combo" stylesheets="@assests/style/Style.css">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor>
@@ -144,7 +144,7 @@
             </LinearGradient>
          </unFocusColor>
       </JFXComboBox>
-      <JFXDatePicker fx:id="datePickerDOB" layoutX="208.0" layoutY="170.0" prefHeight="31.0" prefWidth="151.0" promptText="Date Of Birth :" styleClass="combo" stylesheets="@assests/style/Style.css">
+      <JFXDatePicker fx:id="datePickerDOB" layoutX="223.0" layoutY="171.0" prefHeight="31.0" prefWidth="150.0" promptText="Date Of Birth :" styleClass="combo" stylesheets="@assests/style/Style.css">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor>
@@ -171,9 +171,9 @@
             <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
          </columnResizePolicy>
       </TableView>
-      <JFXTextField fx:id="txtSearch" labelFloat="true" layoutX="486.0" layoutY="96.0" onAction="#txtSearchOnAction" prefHeight="39.0" prefWidth="273.0">
+      <JFXTextField fx:id="txtSearch" labelFloat="true" layoutX="554.0" layoutY="58.0" onAction="#txtSearchOnAction" prefHeight="31.0" prefWidth="197.0" promptText="Search...">
          <font>
-            <Font name="System Bold" size="18.0" />
+            <Font name="System Bold" size="14.0" />
          </font>
          <cursor>
             <Cursor fx:constant="TEXT" />
@@ -204,7 +204,7 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </Button>
-      <Button fx:id="btnAddNew" layoutX="164.0" layoutY="248.0" mnemonicParsing="false" onAction="#btnAddNew_OnAction" prefHeight="38.0" prefWidth="131.0" style="-fx-background-color: green;" text="Add" textFill="WHITE">
+      <Button fx:id="btnAddNew" layoutX="164.0" layoutY="248.0" mnemonicParsing="false" onAction="#btnAddNew_OnAction" prefHeight="38.0" prefWidth="131.0" style="-fx-background-color: green;" text="New" textFill="WHITE">
          <font>
             <Font name="System Bold" size="15.0" />
          </font>
@@ -219,7 +219,7 @@
             <Font name="System Bold" size="15.0" />
          </font>
       </Button>
-      <ImageView fitHeight="39.0" fitWidth="87.0" layoutX="732.0" layoutY="96.0" onMouseClicked="#txtSearchOnAction" pickOnBounds="true" preserveRatio="true">
+      <ImageView fitHeight="39.0" fitWidth="87.0" layoutX="713.0" layoutY="58.0" onMouseClicked="#txtSearchOnAction" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@assests/images/Search.png" />
          </image>
