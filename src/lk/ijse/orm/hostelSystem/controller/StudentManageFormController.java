@@ -17,7 +17,9 @@ import lk.ijse.orm.hostelSystem.dto.StudentDTO;
 import lk.ijse.orm.hostelSystem.util.NotificationController;
 import lk.ijse.orm.hostelSystem.util.UILoader;
 import lk.ijse.orm.hostelSystem.view.TM.StudentTM;
+import org.junit.jupiter.api.Test;
 
+import javax.persistence.EntityNotFoundException;
 import java.io.IOException;
 import java.net.URL;
 import java.sql.SQLException;
@@ -86,7 +88,7 @@ public class StudentManageFormController implements Initializable {
             NotificationController.Warning("Contact Number", "Invalid Student Contact Number.");
             txtContactNo.requestFocus();
             return;
-        } else if (!address.matches("^([A-Za-z]{4,10})$")) {
+        } else if (!address.matches("^([A-Za-z]{4,50})$")) {
             NotificationController.Warning("Address", "Invalid Student Address.");
             txtAddress.requestFocus();
             return;
@@ -155,6 +157,7 @@ public class StudentManageFormController implements Initializable {
             NotificationController.Warning_Error("Delete Student Warning", code, "Failed to delete the Student ");
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
+
         }
     }
 

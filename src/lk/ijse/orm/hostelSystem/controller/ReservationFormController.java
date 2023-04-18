@@ -50,12 +50,10 @@ public class ReservationFormController implements Initializable {
     }
 
     public void btnStudentOnAction(ActionEvent actionEvent) throws IOException {
-
         UILoader.loadUiDashBoard(MainAnchorPane, "StudentManagementForm");
     }
 
     public void navigateToHome(MouseEvent mouseEvent) throws SQLException, IOException {
-
         UILoader.NavigateToHome(MainAnchorPane, "DashBoardForm");
     }
 

@@ -1,5 +1,6 @@
 package lk.ijse.orm.hostelSystem.controller;
 
+import com.fasterxml.jackson.databind.exc.IgnoredPropertyException;
 import com.jfoenix.controls.JFXTextField;
 import javafx.event.ActionEvent;
 import javafx.fxml.Initializable;
@@ -9,12 +10,14 @@ import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
+import jdk.nashorn.internal.ir.annotations.Ignore;
 import lk.ijse.orm.hostelSystem.bo.BOFactory;
 import lk.ijse.orm.hostelSystem.bo.custom.RoomBO;
 import lk.ijse.orm.hostelSystem.dto.RoomDTO;
 import lk.ijse.orm.hostelSystem.util.NotificationController;
 import lk.ijse.orm.hostelSystem.util.UILoader;
 import lk.ijse.orm.hostelSystem.view.TM.RoomTM;
+import org.junit.Test;
 
 import javax.persistence.EntityNotFoundException;
 import java.io.IOException;
@@ -22,7 +25,6 @@ import java.net.URL;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.ResourceBundle;
-
 public class RoomManagementFormController implements Initializable {
     public AnchorPane RoomPane;
     public JFXTextField txtRoomId;
@@ -107,7 +109,7 @@ public class RoomManagementFormController implements Initializable {
 
         String code = tblRoom.getSelectionModel().getSelectedItem().getRoom_type_id();
         try {
-            if (exitRooms(code)) {
+            if (!exitRooms(code)) {
                 new Alert(Alert.AlertType.ERROR, "Warning This Room Already Using by Students. \n Therefore You can't Delete it.!").show();
                 NotificationController.Warning_Error("Delete Rooms Warning", code, "This Room Already Using by Students. ");
             }
@@ -119,8 +121,11 @@ public class RoomManagementFormController implements Initializable {
             initUI();
         } catch (SQLException e) {
             NotificationController.Warning_Error("Delete Rooms Warning", code, "Failed to delete the Rooms ");
-        } catch (Exception e) {
-            e.printStackTrace();
+        } catch (ClassNotFoundException ex){
+            ex.printStackTrace();
+        } catch (EntityNotFoundException e) {
+            new Alert(Alert.AlertType.ERROR, "Warning This Room Already Using by Students. \n Therefore You can't Delete it.!").show();
+            System.out.println(e);;
         }
     }
 
@@ -188,7 +193,7 @@ public class RoomManagementFormController implements Initializable {
 
             if (newValue != null) {
 
-                /*-----------------------Text Field Load----------------------*/
+                /*----------Text Field Load-------------*/
 
                 txtRoomId.setText(newValue.getRoom_type_id());
                 txtRoomType.setText(newValue.getType());
