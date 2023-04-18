@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="MainAnchorPane" prefHeight="539.0" prefWidth="826.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.orm.hostelSystem.controller.ReservationFormController">
+   <children>
+      <Text layoutX="264.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Manage Reservation" textAlignment="CENTER" wrappingWidth="314.13671875">
+         <font>
+            <Font name="Bernard MT Condensed" size="31.0" />
+         </font>
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.580952380952381" startY="0.5">
+               <stops>
+                  <Stop color="#07058d" />
+                  <Stop color="RED" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Text>
+      <Button fx:id="btnBack" layoutX="43.0" layoutY="29.0" mnemonicParsing="false" onAction="#BackOnAction" onMouseClicked="#navigateToHome" prefHeight="22.0" prefWidth="62.0" style="-fx-background-color: maroon;" text="Back" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <JFXTextField fx:id="txtAddress" labelFloat="true" layoutX="29.0" layoutY="177.0" prefHeight="31.0" prefWidth="231.0" promptText="Address">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <unFocusColor>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.6142857142857143" startY="0.6571428571428571">
+               <stops>
+                  <Stop color="#091290" />
+                  <Stop color="RED" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </unFocusColor>
+         <focusColor>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.580952380952381" startY="0.5">
+               <stops>
+                  <Stop color="#07058d" />
+                  <Stop color="RED" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </focusColor>
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </JFXTextField>
+      <JFXTextField fx:id="txtDOB" labelFloat="true" layoutX="311.0" layoutY="177.0" prefHeight="31.0" prefWidth="231.0" promptText="DOB">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <unFocusColor>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.6142857142857143" startY="0.6571428571428571">
+               <stops>
+                  <Stop color="#091290" />
+                  <Stop color="RED" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </unFocusColor>
+         <focusColor>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.580952380952381" startY="0.5">
+               <stops>
+                  <Stop color="#07058d" />
+                  <Stop color="RED" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </focusColor>
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </JFXTextField>
+      <JFXTextField fx:id="txtGender" labelFloat="true" layoutX="577.0" layoutY="177.0" prefHeight="31.0" prefWidth="231.0" promptText="Gender">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <unFocusColor>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.6142857142857143" startY="0.6571428571428571">
+               <stops>
+                  <Stop color="#091290" />
+                  <Stop color="RED" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </unFocusColor>
+         <focusColor>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.580952380952381" startY="0.5">
+               <stops>
+                  <Stop color="#07058d" />
+                  <Stop color="RED" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </focusColor>
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </JFXTextField>
+      <JFXTextField fx:id="txtContactNo" labelFloat="true" layoutX="577.0" layoutY="113.0" prefHeight="31.0" prefWidth="231.0" promptText="Contact">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <unFocusColor>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.6142857142857143" startY="0.6571428571428571">
+               <stops>
+                  <Stop color="#091290" />
+                  <Stop color="RED" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </unFocusColor>
+         <focusColor>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.580952380952381" startY="0.5">
+               <stops>
+                  <Stop color="#07058d" />
+                  <Stop color="RED" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </focusColor>
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </JFXTextField>
+      <JFXTextField fx:id="txtStudentName" labelFloat="true" layoutX="311.0" layoutY="113.0" prefHeight="31.0" prefWidth="231.0" promptText="Student Name:">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <unFocusColor>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.6142857142857143" startY="0.6571428571428571">
+               <stops>
+                  <Stop color="#091290" />
+                  <Stop color="RED" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </unFocusColor>
+         <focusColor>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.580952380952381" startY="0.5">
+               <stops>
+                  <Stop color="#07058d" />
+                  <Stop color="RED" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </focusColor>
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </JFXTextField>
+      <JFXComboBox fx:id="cmbStudentId" labelFloat="true" layoutX="30.0" layoutY="113.0" prefHeight="25.0" prefWidth="231.0" promptText="Student ID:" styleClass="combo" stylesheets="@assests/style/Style.css">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <unFocusColor>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.6142857142857143" startY="0.6571428571428571">
+               <stops>
+                  <Stop color="#091290" />
+                  <Stop color="RED" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </unFocusColor>
+         <focusColor>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.580952380952381" startY="0.5">
+               <stops>
+                  <Stop color="#07058d" />
+                  <Stop color="RED" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </focusColor></JFXComboBox>
+      <Label fx:id="llbResId" layoutX="136.0" layoutY="91.0" prefHeight="31.0" prefWidth="123.0">
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.6285714285714286" startY="0.4238095238095238">
+               <stops>
+                  <Stop color="#0b1383" />
+                  <Stop color="#ffac05" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </textFill></Label>
+      <JFXTextField fx:id="txtQty" labelFloat="true" layoutX="29.0" layoutY="332.0" prefHeight="31.0" prefWidth="231.0" promptText="QTY">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <unFocusColor>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.6142857142857143" startY="0.6571428571428571">
+               <stops>
+                  <Stop color="#091290" />
+                  <Stop color="RED" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </unFocusColor>
+         <focusColor>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.580952380952381" startY="0.5">
+               <stops>
+                  <Stop color="#07058d" />
+                  <Stop color="RED" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </focusColor>
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </JFXTextField>
+      <JFXTextField fx:id="txtKeyMoney" labelFloat="true" layoutX="305.0" layoutY="332.0" prefHeight="31.0" prefWidth="231.0" promptText="Advance">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <unFocusColor>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.6142857142857143" startY="0.6571428571428571">
+               <stops>
+                  <Stop color="#091290" />
+                  <Stop color="RED" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </unFocusColor>
+         <focusColor>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.580952380952381" startY="0.5">
+               <stops>
+                  <Stop color="#07058d" />
+                  <Stop color="RED" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </focusColor>
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </JFXTextField>
+      <JFXTextField fx:id="txtMonthlyRent" labelFloat="true" layoutX="571.0" layoutY="268.0" prefHeight="31.0" prefWidth="231.0" promptText="Key Money">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <unFocusColor>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.6142857142857143" startY="0.6571428571428571">
+               <stops>
+                  <Stop color="#091290" />
+                  <Stop color="RED" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </unFocusColor>
+         <focusColor>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.580952380952381" startY="0.5">
+               <stops>
+                  <Stop color="#07058d" />
+                  <Stop color="RED" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </focusColor>
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </JFXTextField>
+      <JFXTextField fx:id="txtRoomType" labelFloat="true" layoutX="305.0" layoutY="268.0" prefHeight="31.0" prefWidth="231.0" promptText="Room Type">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <unFocusColor>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.6142857142857143" startY="0.6571428571428571">
+               <stops>
+                  <Stop color="#091290" />
+                  <Stop color="RED" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </unFocusColor>
+         <focusColor>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.580952380952381" startY="0.5">
+               <stops>
+                  <Stop color="#07058d" />
+                  <Stop color="RED" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </focusColor>
+         <cursor>
+            <Cursor fx:constant="TEXT" />
+         </cursor>
+      </JFXTextField>
+      <JFXComboBox fx:id="cmbRoomId" labelFloat="true" layoutX="30.0" layoutY="268.0" prefHeight="25.0" prefWidth="231.0" promptText="Room ID:" styleClass="combo" stylesheets="@assests/style/Style.css">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+         <unFocusColor>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.6142857142857143" startY="0.6571428571428571">
+               <stops>
+                  <Stop color="#091290" />
+                  <Stop color="RED" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </unFocusColor>
+         <focusColor>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.580952380952381" startY="0.5">
+               <stops>
+                  <Stop color="#07058d" />
+                  <Stop color="RED" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </focusColor></JFXComboBox>
+      <Button fx:id="btnStudent" layoutX="613.0" layoutY="369.0" mnemonicParsing="false" onAction="#btnStudentOnAction" onMouseClicked="#navigateToHome" prefHeight="38.0" prefWidth="131.0" style="-fx-background-color: green;" text="Add Student" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button fx:id="btnReserve" layoutX="598.0" layoutY="436.0" mnemonicParsing="false" onAction="#btnReserveOnAction" onMouseClicked="#navigateToHome" prefHeight="67.0" prefWidth="163.0" style="-fx-background-color: #bb0853;" text="Reserve Room" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Label layoutX="17.0" layoutY="82.0" text="Student Details :" textFill="#686868" />
+      <Label layoutX="18.0" layoutY="239.0" text="Room Details :" textFill="#686868" />
+   </children>
+</AnchorPane>

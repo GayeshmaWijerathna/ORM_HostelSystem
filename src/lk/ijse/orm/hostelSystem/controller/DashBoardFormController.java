@@ -18,12 +18,12 @@ import javafx.stage.Stage;
 import javafx.util.Duration;
 import lk.ijse.orm.hostelSystem.util.UILoader;
 
+
 import java.io.IOException;
 import java.sql.SQLException;
 import java.util.Objects;
 
 public class DashBoardFormController {
-
 
     public ImageView imgStudent;
     public ImageView imgRooms;
@@ -48,13 +48,13 @@ public class DashBoardFormController {
 
             switch (icon.getId()) {
                 case "imgStudent":
-                    root = FXMLLoader.load(Objects.requireNonNull(this.getClass().getResource("/lk/ijse/orm/view/ReservationForm.fxml")));
+                    root = FXMLLoader.load(Objects.requireNonNull(this.getClass().getResource("/lk/ijse/orm/hostelSystem/view/ReservationForm.fxml")));
                     break;
                 case "imgRooms":
-                    root = FXMLLoader.load(Objects.requireNonNull(this.getClass().getResource("/lk/ijse/orm/view/RoomManagementForm.fxml")));
+                    root = FXMLLoader.load(Objects.requireNonNull(this.getClass().getResource("/lk/ijse/orm/hostelSystem/view/RoomManagementForm.fxml")));
                     break;
                 case "imgKeyMoney":
-                    root = FXMLLoader.load(Objects.requireNonNull(this.getClass().getResource("/lk/ijse/orm/view/FindKeyMoneyForm.fxml")));
+                    root = FXMLLoader.load(Objects.requireNonNull(this.getClass().getResource("/lk/ijse/orm/hostelSystem/view/FindKeyMoneyForm.fxml")));
                     break;
             }
 
@@ -79,16 +79,16 @@ public class DashBoardFormController {
 
             switch (icon.getId()) {
                 case "imgStudent":
-                    lblMenu.setText("Manage Registration");
+                    lblMenu.setText("Registration");
                     lblDescription.setText("Click to Make Registration and Add, Update, Delete Student");
                     break;
                 case "imgRooms":
-                    lblMenu.setText("Manage Rooms");
+                    lblMenu.setText("Rooms Management");
                     lblDescription.setText("Click to Add, Update, Delete Rooms");
                     break;
                 case "imgKeyMoney":
-                    lblMenu.setText("Find Key Money");
-                    lblDescription.setText("Click to find remain key money student");
+                    lblMenu.setText("Key Money Payments");
+                    lblDescription.setText("Click to find Remain key money from students");
                     break;
             }
 
@@ -119,12 +119,7 @@ public class DashBoardFormController {
 
             lblMenu.setText("");
             lblDescription.setText("");
-
         }
-    }
-
-    public void navigateToHome(MouseEvent mouseEvent) throws SQLException, IOException {
-
     }
 
     public void BackOnAction(ActionEvent actionEvent) throws SQLException, IOException {

@@ -1,4 +1,4 @@
-package lk.ijse.orm.controller;
+package lk.ijse.orm.hostelSystem.controller;
 
 import com.jfoenix.controls.JFXTextField;
 import javafx.event.ActionEvent;
@@ -9,12 +9,12 @@ import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
-import lk.ijse.orm.bo.BOFactory;
-import lk.ijse.orm.bo.custom.ReserveBO;
-import lk.ijse.orm.dto.ReservationDTO;
-import lk.ijse.orm.util.NotificationController;
-import lk.ijse.orm.util.UILoader;
-import lk.ijse.orm.view.TM.ReservationTM;
+import lk.ijse.orm.hostelSystem.bo.BOFactory;
+import lk.ijse.orm.hostelSystem.bo.custom.ReserveBO;
+import lk.ijse.orm.hostelSystem.dto.ReservationDTO;
+import lk.ijse.orm.hostelSystem.util.NotificationController;
+import lk.ijse.orm.hostelSystem.util.UILoader;
+import lk.ijse.orm.hostelSystem.view.TM.ReservationTM;
 
 import java.io.IOException;
 import java.net.URL;
@@ -22,7 +22,7 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.ResourceBundle;
 
-public class FindKeyMoneyController implements Initializable {
+public class FindKeyMoneyFormController implements Initializable {
     public AnchorPane MainAnchorPane;
     public JFXTextField txtSearch;
     public Button btnBack;
@@ -63,10 +63,10 @@ public class FindKeyMoneyController implements Initializable {
     private boolean RegExit(String id) throws SQLException, ClassNotFoundException {
         return reserveBO.existReserveID(id);
     }
-
+    /*All Reserve*/
     private void loadAllReserve() {
         tblRemain.getItems().clear();
-        /*Get all Reserve*/
+
         try {
             ArrayList<ReservationDTO> allReserve = reserveBO.getAllReserve();
             for (ReservationDTO reservationDTO : allReserve) {

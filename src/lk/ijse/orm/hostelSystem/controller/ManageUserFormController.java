@@ -1,4 +1,4 @@
-package lk.ijse.orm.controller;
+package lk.ijse.orm.hostelSystem.controller;
 
 import com.jfoenix.controls.JFXComboBox;
 import com.jfoenix.controls.JFXTextField;
@@ -10,12 +10,12 @@ import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.AnchorPane;
-import lk.ijse.orm.bo.BOFactory;
-import lk.ijse.orm.bo.custom.UserBO;
-import lk.ijse.orm.dto.LoginDTO;
-import lk.ijse.orm.util.NotificationController;
-import lk.ijse.orm.util.UILoader;
-import lk.ijse.orm.view.TM.LoginTM;
+import lk.ijse.orm.hostelSystem.bo.BOFactory;
+import lk.ijse.orm.hostelSystem.bo.custom.UserBO;
+import lk.ijse.orm.hostelSystem.dto.LoginDTO;
+import lk.ijse.orm.hostelSystem.util.NotificationController;
+import lk.ijse.orm.hostelSystem.util.UILoader;
+import lk.ijse.orm.hostelSystem.view.TM.LoginTM;
 
 import java.io.IOException;
 import java.net.URL;
@@ -23,7 +23,7 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.ResourceBundle;
 
-public class ManageUserController implements Initializable {
+public class ManageUserFormController implements Initializable {
     public AnchorPane UserPane;
     public JFXTextField txtId;
     public Button btnBack;
