@@ -7,8 +7,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.Button;
-import javafx.scene.control.Label;
+import javafx.scene.control.*;
 import javafx.scene.effect.DropShadow;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
@@ -22,6 +21,7 @@ import lk.ijse.orm.hostelSystem.util.UILoader;
 import java.io.IOException;
 import java.sql.SQLException;
 import java.util.Objects;
+import java.util.Optional;
 
 public class DashBoardFormController {
 
@@ -123,6 +123,13 @@ public class DashBoardFormController {
     }
 
     public void BackOnAction(ActionEvent actionEvent) throws SQLException, IOException {
-        UILoader.NavigateToHome(AdminDashboard, "LoginForm");
+      ButtonType ok = new ButtonType("Yes", ButtonBar.ButtonData.OK_DONE);
+        ButtonType no = new ButtonType("NO", ButtonBar.ButtonData.CANCEL_CLOSE);
+
+        Alert alert = new Alert(Alert.AlertType.CONFIRMATION, "Are You Sure ?", ok, no);
+        Optional<ButtonType> result = alert.showAndWait();
+        if (result.orElse(no) == ok) {
+            UILoader.NavigateToHome(AdminDashboard, "LoginForm");
+     }
     }
 }

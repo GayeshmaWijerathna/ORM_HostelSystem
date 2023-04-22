@@ -76,7 +76,7 @@
             </LinearGradient>
          </textFill>
       </Label>
-      <Button fx:id="btnBack" layoutX="31.0" layoutY="36.0" mnemonicParsing="false" onAction="#BackOnAction" prefHeight="29.0" prefWidth="69.0" style="-fx-background-color: maroon;" text="Back" textFill="WHITE">
+      <Button fx:id="btnBack" layoutX="31.0" layoutY="36.0" mnemonicParsing="false" onAction="#BackOnAction" prefHeight="31.0" prefWidth="80.0" style="-fx-background-color: orange;" text="LogOut" textFill="WHITE">
          <font>
             <Font name="System Bold" size="15.0" />
          </font>

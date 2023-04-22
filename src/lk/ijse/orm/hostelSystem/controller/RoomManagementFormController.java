@@ -47,8 +47,8 @@ public class RoomManagementFormController implements Initializable {
         int qty = Integer.parseInt(txtQty.getText());
         String key_money = txtMRent.getText();
 
-        if (!id.matches("^RID-[0-9]{3,4}$")) {
-            NotificationController.Warning("Room ID", "Invalid Room ID.Type RID-000 in your entered value.");
+        if (!id.matches("^RM-[0-9]{2,4}$")) {
+            NotificationController.Warning("Room ID", "Invalid Room ID.Type RM-000 in your entered value.");
             txtRoomId.requestFocus();
             return;
         } else if (!type.matches("^([A-z]{1,9}|[A-z]{1,9}[ /|-]?[A-z]{1,9}[ /|-]?[A-z]{1,9})$")) {
